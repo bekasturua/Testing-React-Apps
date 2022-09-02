@@ -11,6 +11,6 @@ test("renders Hello World as a text", () => {
 
   // Assert
 
-  const helloWorldElement = screen.getByText("Hello World");
+  const helloWorldElement = screen.getByText("Hello World", { exact: false });
   expect(helloWorldElement).toBeInTheDocument();
 });
